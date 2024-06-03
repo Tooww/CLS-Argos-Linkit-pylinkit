@@ -66,7 +66,8 @@ class DTE():
                  'rtd': 4,
                  'cdt': 5,
                  'axl': 6,
-                 'pressure': 7 }
+                 'pressure': 7,
+                 'baro': 8 } #Tom 
         resp = self._nus.send(self._encode_command('DUMPD', args=['{}'.format(log_d[log_type])]), multi_response=True)
         responses = self._decode_multi_response(resp)
         raw_data = b''
