@@ -91,7 +91,8 @@ class DTE():
                  'rtd': 6,
                  'cdt': 7,
                  'axl': 8,
-                 'pressure': 9 }
+                 'pressure': 9,
+                  'baro': 10 } #Tom
         resp = self._nus.send(self._encode_command('ERASE', args=['{}'.format(log_d[log_type])]))
         self._decode_response(resp)
 
