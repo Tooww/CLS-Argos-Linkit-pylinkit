@@ -4,7 +4,7 @@ import sys
 import pylinkit
 from .utils import OrderedRawConfigParser, extract_firmware_file_from_dfu, create_wrapped_file_with_crc32
 
-erase_options = ['sensor', 'system', 'all', 'als', 'ph', 'rtd', 'cdt', 'axl', 'pressure']
+erase_options = ['sensor', 'system', 'all', 'als', 'ph', 'rtd', 'cdt', 'axl', 'pressure', 'baro']#Tom
 dumpd_options = ['system', 'gnss', 'als', 'ph', 'rtd', 'cdt', 'axl', 'pressure', 'baro']#Tom
 scalw_options = ['cdt', 'ph', 'rtd', 'mcp47x6']
 resetv_options = {'tx_counter': 1, 'rx_counter': 3, 'rx_time': 4}
